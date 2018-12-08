@@ -92,6 +92,7 @@ func (wsh wsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	wsConn.Close()
 }
 
+// inform game state changes
 func sendGameStateToConnection(wsConn *websocket.Conn, c *connection) {
 	err := wsConn.WriteMessage(websocket.TextMessage, c.cp.gs.gameStateToJSON())
 	if err != nil {
@@ -99,6 +100,7 @@ func sendGameStateToConnection(wsConn *websocket.Conn, c *connection) {
 	}
 }
 
+// make playerNum known to the player
 func sendPlayerInfoToConnection(wsConn *websocket.Conn, c *connection) {
 	playerInfo, _ := json.Marshal(map[string]int{"playerNum": c.playerNum})
 	_ = wsConn.WriteMessage(websocket.TextMessage, playerInfo)

@@ -6,6 +6,9 @@ Tech Stack:
 - Backend: Go-lang
 - Frontend: VueJs
 
+## Demo
+
+![demo.gif](https://raw.githubusercontent.com/decebal/LocalMultiPlayerNoughtsCrosses/master/demo.gif)
 
 ## Running the example
 
