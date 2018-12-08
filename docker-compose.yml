@@ -1,0 +1,23 @@
+backend:
+#  restart: always
+  build: ./backend
+  environment:
+    - PORT=${PORT_APP_INTERNAL}
+    - HOST=${APP_HOST}
+  expose:
+    - ${PORT_APP_EXTERNAL}
+  ports:
+    - "${PORT_APP_EXTERNAL}:${PORT_APP_INTERNAL}"
+
+frontend:
+#  restart: always
+  build: ./frontend
+  environment:
+    - PORT=${PORT_FE_INTERNAL}
+    - WS_HOST=${APP_HOST}
+    - WS_PORT=${PORT_APP_EXTERNAL}
+    - HOST=${FE_HOST}
+  expose:
+    - ${PORT_FE_EXTERNAL}
+  ports:
+    - "${PORT_FE_EXTERNAL}:${PORT_FE_INTERNAL}"
