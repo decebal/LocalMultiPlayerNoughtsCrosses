@@ -12,7 +12,7 @@
   "dependencies": {
     "bootstrap": "5.0.1",
     "font-awesome": "4.7.0",
-    "vue": "2.6.12",
+    "vue": "2.6.14",
     "vue-native-websocket": "2.0.14",
     "vuex": "3.6.2"
   },
@@ -23,14 +23,14 @@
     "@vue/cli-plugin-unit-jest": "4.5.13",
     "@vue/cli-service": "4.5.13",
     "@vue/eslint-config-airbnb": "5.3.0",
-    "@vue/test-utils": "1.2.0",
+    "@vue/test-utils": "1.2.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "27.0.5",
     "eslint": "7.27.0",
     "eslint-plugin-vue": "7.12.1",
     "lint-staged": "11.0.0",
-    "vue-template-compiler": "2.6.12"
+    "vue-template-compiler": "2.6.14"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
