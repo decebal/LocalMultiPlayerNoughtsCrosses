@@ -13,7 +13,7 @@
     "bootstrap": "5.0.2",
     "font-awesome": "4.7.0",
     "vue": "2.6.14",
-    "vue-native-websocket": "2.0.14",
+    "vue-native-websocket": "2.0.15",
     "vuex": "3.6.2"
   },
   "devDependencies": {
