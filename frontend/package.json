@@ -10,7 +10,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "bootstrap": "5.1.1",
+    "bootstrap": "5.1.2",
     "font-awesome": "4.7.0",
     "vue": "2.6.14",
     "vue-native-websocket": "2.0.15",
